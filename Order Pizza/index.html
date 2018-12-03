@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Choose the size of the pizza</h2>
+    
+    <div class="pizza_size">
+        24'<input onclick="click_size('24_size');" id="24_size" type="radio" name="same" value="100">
+        32'<input onclick="click_size('32_size');" id="32_size" type="radio" name="same" value="150">
+        46'<input onclick="click_size('46_size');" id="46_size" type="radio" name="same" value="230'">
+    </div>
+
+    <h2>Choose a pizza</h2>
+
+    <div class="pizzas">
+        <input name="Capricciosa" onclick="submit_pizza('capricciosa');" id="capricciosa" type="image" src="images\capricciosa.jpg" value="500">Capricciosa - 500 rsd
+        <input name="Quattro Stagioni" onclick="submit_pizza('quattro_stagioni');" id="quattro_stagioni" id="24_size" type="image" src="images\quattro stagioni.jpg" value="600">Quattro Stagioni  - 600 rsd
+        <input name="Margarita" onclick="submit_pizza('margarita');" id="margarita" type="image" src="images\margarita.jpg" value="650">Margarita  - 650 rsd
+        <input name="Vesuvio" onclick="submit_pizza('vesuvio');" id="vesuvio" type="image" src="images\vesuvio.jpg" value="700">Vesuvio  - 700 rsd
+        <input name="Funghi" onclick="submit_pizza('funghi');" id="funghi" type="image" src="images\funghi.jpg" value="800">Funghi - 800 rsd
+    </div>
+    
+    <h2>Choose a side dish</h2>
+
+    <div class="side_dish">
+        Sour cream - 30 rsd<input onclick="check_dishes();" name="Sour cream" class="side_dishes" type="checkbox" value="30">
+        Ketchup - 25 rsd<input onclick="check_dishes();" name="Ketchup" class="side_dishes" type="checkbox" value="25">
+        Mayonnaise - 20 rsd<input onclick="check_dishes();" name="Mayonnaise" class="side_dishes" type="checkbox" value="20">
+        Mustard - 25 rsd<input onclick="check_dishes();" name="Mustard" class="side_dishes" type="checkbox" value="25">
+        Bacon - 30 rsd<input onclick="check_dishes();" name="Bacon" class="side_dishes" type="checkbox" value="30">
+        Olives - 35 rsd<input onclick="check_dishes();" name="Olives" class="side_dishes" type="checkbox" value="35">
+        Onion - 15 rsd<input onclick="check_dishes();" name="Onion" class="side_dishes" type="checkbox" value="15">
+    </div>
+    
+    <div>Price:<input type="input" id="result"></div>
+    
+    <h2>Enter your information</h2>
+
+    <div class="customer_info">
+        First name<input id="name" type="text">
+        Last name<input id="surname" type="text">
+        Address<input id="address" type="text">
+        Phone number<input id="phone" type="tel">
+    </div>
+
+    <input type="button" onclick="order()" value="Order">
+
+    <script src="myapp.js"></script>
+</body>
+</html>
